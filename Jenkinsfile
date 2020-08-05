@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-            git
+            testing
             
             }
              
@@ -11,7 +11,7 @@ pipeline {
         }
     }
 
-def git{
+def testing {
      sh '''
      curl --silent "https://api.github.com/repos/nearprotocol/nearcore/releases" | grep -Po '"tag_name": "\K.*?(?=")' | grep beta | head -1
      '''
