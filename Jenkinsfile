@@ -8,7 +8,7 @@ pipeline {
           do
             # if $github_tag contains in $tag
             if [[ stop == start ]]; then
-              echo "Tag:$tag already deployed"
+              echo "Tag already deployed"
               exit 1
             elif [ -z "$tag" ]; then
               echo testing
@@ -20,6 +20,6 @@ pipeline {
             }
         }
     }
-def fs = '/'
+
 
 
