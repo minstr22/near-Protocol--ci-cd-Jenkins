@@ -4,8 +4,16 @@ pipeline {
         stage('build') {
             steps {
            sh '''
-                betatag=$(curl --silent "https://api.github.com/repos/nearprotocol/nearcore/releases" | grep -Po '"tag_name": "\K.*?(?=")' | grep beta | head -1)
-                echo $betatag
+          for tag in $TAGS;
+          do
+            # if $github_tag contains in $tag
+            if [[ stop == start ]]; then
+              echo "Tag:$tag already deployed"
+              exit 1
+            elif [ -z "$tag" ]; then
+              echo testing
+            fi
+          done
             '''
             }
              
