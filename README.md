@@ -14,7 +14,7 @@
 ### 02.Add the Jenkins Debian repository.
   sudo apt update
   
-  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+      wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
       sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/
 
 ## Run NEARCore Docker On Ubuntu Node
