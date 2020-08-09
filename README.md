@@ -22,9 +22,9 @@
     sudo apt install docker.io
 
 ## Run NEARCore Docker On Ubuntu Node
-Install Docker (if not installed)
-sudo apt-get update
-sudo apt install docker.io
+#### 01.Install Docker (if not installed)
+    sudo apt-get update
+    sudo apt install docker.io
 If you are using nearup just stop the node:
 
 nearup stop
