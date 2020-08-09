@@ -17,6 +17,10 @@
 ### 03.Install Jenkins.
     sudo apt update
     sudo apt install jenkins
+## NEARCore Docker
+    sudo apt-get update
+    sudo apt install docker.io
+
 ## Run NEARCore Docker On Ubuntu Node
 Install Docker (if not installed)
 sudo apt-get update
