@@ -8,10 +8,14 @@
 ## Install Jenkins On Ubuntu Node
 ### 01.Install java
   sudo apt update 
-  sudo apt isntall openjdk-8-jdk
+ 
+ sudo apt isntall openjdk-8-jdk
+
 ### 02.Add the Jenkins Debian repository.
   sudo apt update
+  
   wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+   
   sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/
 
 ## Run NEARCore Docker On Ubuntu Node
