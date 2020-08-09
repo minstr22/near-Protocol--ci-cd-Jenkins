@@ -6,23 +6,19 @@
  
  [Jenkins](https://www.jenkins.io/) is an open source automation server which enables developers around the world to reliably build, test, and deploy their software.
 ## Install Jenkins On Ubuntu Node
-01.Install java
+### 01.Install java
     sudo apt update
-     sudo apt install openjdk-8-jdk
+    sudo apt install openjdk-8-jdk
 
-02.Add the Jenkins Debian repository.
+### 02.Add the Jenkins Debian repository.
 
   Import the GPG keys of the Jenkins repository using the following wget command:
-
   wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+  The command above should output OK which means that the key has been successfully imported and packages from this repository will be considered trusted.
+  Next, add the Jenkins repository to the system with:
+  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/
 
-The command above should output OK which means that the key has been successfully imported and packages from this repository will be considered trusted.
-
-Next, add the Jenkins repository to the system with:
-
-sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/
-
-##Run NEARCore Docker On Ubuntu Node
+## Run NEARCore Docker On Ubuntu Node
 Install Docker (if not installed)
 sudo apt-get update
 sudo apt install docker.io
