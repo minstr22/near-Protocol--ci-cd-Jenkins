@@ -31,6 +31,6 @@
     
 
 ## Prometheus and Grafana
-[Prometheus] (https://prometheus.io/) is installed on startup to expose metrics for the NEAR validating node and the system. [Grafana] (https://grafana.com/) is installed to help vsualize these metrics with a dashboard that is customized to show relevant metrics for NEAR validating nodes. The majority is configured and can be accessed by :3000 and default username and password is admin admin.
+[Prometheus](https://prometheus.io/) is installed on startup to expose metrics for the NEAR validating node and the system. [Grafana](https://grafana.com/) is installed to help vsualize these metrics with a dashboard that is customized to show relevant metrics for NEAR validating nodes. The majority is configured and can be accessed by :3000 and default username and password is admin admin.
 
-This was Near's Stake Wars Challenge 3 and a few great tutorials in various languages can be found [here] (https://github.com/nearprotocol/stakewars/blob/master/challenges/challenge003.md)
+This was Near's Stake Wars Challenge 3 and a few great tutorials in various languages can be found [here](https://github.com/nearprotocol/stakewars/blob/master/challenges/challenge003.md/) 
