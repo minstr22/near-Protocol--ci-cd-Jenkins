@@ -30,25 +30,7 @@
     
     
 
-## Run NEARCore Docker On Ubuntu Node
-#### 01.Install Docker (if not installed)
-    sudo apt-get update
-    sudo apt install docker.io
-If you are using nearup just stop the node:
+## Prometheus and Grafana
+[Prometheus] (https://prometheus.io/) is installed on startup to expose metrics for the NEAR validating node and the system. [Grafana] (https://grafana.com/) is installed to help vsualize these metrics with a dashboard that is customized to show relevant metrics for NEAR validating nodes. The majority is configured and can be accessed by :3000 and default username and password is admin admin.
 
-nearup stop
-In the future if you will not use docker, you can use nearup again without any problems.
-
-After the first run of our workflow a new docker images(nearprotocol/nearcore:beta and nearprotocol/nearcore:rc) should be available and we can run the near node with the following command:
-
-sudo docker run -dti \
-     --restart always \
-     --user 0 \
-     --volume $HOME/.near/betanet/:/srv/near \
-     --volume /tmp:/tmp \
-     --name nearcore \
-     --network=host \
-     -p 3030 \
-     -p 24567 nearprotocol/nearcore:beta near --home /srv/near run
- 
- P.S. You can finde netcore latest versions there: 
+This was Near's Stake Wars Challenge 3 and a few great tutorials in various languages can be found [here] (https://github.com/nearprotocol/stakewars/blob/master/challenges/challenge003.md)
