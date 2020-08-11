@@ -17,9 +17,11 @@
   ##### 03.Install Jenkins.
     sudo apt update
     sudo apt install jenkins
-## NEARCore Docker
+## NEARCore Docker Deploy
+####    01.Install Docker  
     sudo apt-get update
     sudo apt install docker.io
+####    02.Create Jenkins freestyle project NearCoreBetaNet-Deploy
 
 ## Run NEARCore Docker On Ubuntu Node
 #### 01.Install Docker (if not installed)
