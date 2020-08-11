@@ -24,6 +24,7 @@
 ####    02.Create Jenkins freestyle project NearCoreBetaNet-Deploy
     Jenknis > New Item > Freestyle Project
    add [bash script](https://github.com/minstr22/nearcore-ci-cd/blob/master/Scripts/NearCoreBetaNet-Deploy.sh) as a build step "Execute shell"
+   ![Alt text](/screenshot/deploy.png?raw=true "Optional Title") 
     
 
 ## Run NEARCore Docker On Ubuntu Node
