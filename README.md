@@ -23,7 +23,7 @@
     sudo apt install docker.io
 ####    02.Create Jenkins freestyle project NearCoreBetaNet-Deploy
     Jenknis > New Item > Freestyle Project
-   add [NEAR Protocol](https://near.org/) as a build step "Execute shell"
+   add [bash script](https://near.org/) as a build step "Execute shell"
     
 
 ## Run NEARCore Docker On Ubuntu Node
