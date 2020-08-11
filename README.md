@@ -26,10 +26,6 @@
    add [bash script](https://github.com/minstr22/nearcore-ci-cd/blob/master/Scripts/NearCoreBetaNet-Deploy.sh) as a build step "Execute shell" and than run build now
    ![Screenshot](deploy.png)
 
-   
-    
-    
-
 ## Prometheus and Grafana
 [Prometheus](https://prometheus.io/) is installed on startup to expose metrics for the NEAR validating node and the system. [Grafana](https://grafana.com/) is installed to help vsualize these metrics with a dashboard that is customized to show relevant metrics for NEAR validating nodes. The majority is configured and can be accessed by :3000 and default username and password is admin admin.
 
