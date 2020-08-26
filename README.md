@@ -45,3 +45,6 @@ Note: Currently the user would have to ssh into the validator machine and login 
    Build Trigger must be "Build periodically": */25 * * * * . To check new release in every 25 minutes
     
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
