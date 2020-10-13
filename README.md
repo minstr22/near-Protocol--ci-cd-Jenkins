@@ -27,10 +27,8 @@
    ![Screenshot](deploy.png)
 
 
-and thats for testnet
-
-
-	#!/bin/bashdocker=$(docker images | grep -e -rc | awk '{print $2}')
+####    Testnetr  
+    #!/bin/bashdocker=$(docker images | grep -e -rc | awk '{print $2}')
 for git in $(curl --silent "https://api.github.com/repos/nearprotocol/nearcore/releases" | grep -Po '"tag_name": "\K.*?(?=")' | grep rc | head -1)
 do
    if	[ $git == $docker ]; then
